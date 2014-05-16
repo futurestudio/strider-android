@@ -1,0 +1,36 @@
+{
+  "name": "strider-custom",
+  "version": "0.5.2",
+  "description": "Support for custom prepare, test and deploy phases in Strider",
+  "main": "index.js",
+  "scripts": {
+    "test": "jshint && mocha -R tap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Strider-CD/strider-custom.git"
+  },
+  "keywords": [
+    "strider"
+  ],
+  "author": "Niall O'Higgins",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "gitane": "~0.3.1"
+  },
+  "strider": {
+    "id": "custom",
+    "type": "job",
+    "icon": "icon.png",
+    "title": "Custom Scripts",
+    "worker": "worker.js",
+    "webapp": "webapp.js",
+    "config": true
+  },
+  "devDependencies": {
+    "chai": "~1.8.1",
+    "mocha": "~1.14.0",
+    "jshint": "~2.3.0"
+  }
+}
