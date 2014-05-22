@@ -4,7 +4,7 @@ module.exports = {
     /* no version support yet
     runtime: {
       type: String,
-      enum: ['2.6', '2.7', '3.3', 'whatever']
+      enum: ['7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', 'whatever']
     },
     */
     test: {
