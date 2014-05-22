@@ -1,0 +1,33 @@
+{
+  "name": "strider-android",
+  "version": "0.0.1",
+  "description": "Android support for Strider Continuous Deployment. Based on Gradle",
+  "scripts": {
+    "test": "gradle test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcuspoehls/strider-android.git"
+  },
+  "keywords": [
+    "strider",
+    "android",
+    "gradle"
+  ],
+  "strider": {
+    "type": "job",
+    "id": "android",
+    "title": "Android",
+    "webapp": "webapp.js",
+    "worker": "worker.js",
+    "icon": "icon.png",
+    "config": true
+  },
+  "author": "Marcus Poehls",
+  "license": "BSD",
+  "dependencies": {
+    "strider-detection-rules": "0.0.1"
+  },
+  "devDependencies": {
+  }
+}

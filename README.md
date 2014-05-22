@@ -1,4 +1,4 @@
 strider-android
 ===============
 
-StriderCD Android
+Android plugin for Strider Continuous Deployment.

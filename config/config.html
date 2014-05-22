@@ -1,0 +1,15 @@
+<input type="text" ng-model="config.prepare" />
+<p class="help-text">
+  Select which command should be used to prepare your project. The default is
+  "gradle install".
+</p>
+<select ng-model="config.test">
+  <option value="gradle build">gradle build</option>
+  <option value="none">No test command</option>
+</select>
+<p class="help-text">
+  Select which command should be used to test your
+  project. Alternatively, select "none" if you are going to test using
+  some other plugin.
+</p>
+<button class="btn btn-primary" ng-click="save()">Save</button>
