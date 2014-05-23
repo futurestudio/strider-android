@@ -1,9 +1,9 @@
 {
   "name": "strider-android",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Android support for Strider Continuous Deployment. Based on Gradle",
   "scripts": {
-    "test": "gradle test"
+    "test": "npm test"
   },
   "repository": {
     "type": "git",

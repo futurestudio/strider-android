@@ -9,7 +9,7 @@ module.exports = {
     */
     test: {
       type: String,
-      enum: ['none', 'gradle build'],
+      enum: ['none', 'gradle build', 'mvn clean install'],
       default: 'gradle build'
     },
     prepare: {

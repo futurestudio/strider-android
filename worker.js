@@ -17,22 +17,29 @@ module.exports = {
       test = config.test
     }
     var defaultPrepare = function (context, done) {
-        // TODO
+        if (!fs.existsSync(path.join(context.dataDir, 'build.gradle'))) {
+          // skip if default and no build.gradle exists
+          // we assume that if you're configuring your own, you'll ensure the file exists
+          return done(null, true)
+        }
+        context.cmd("gradle install", function (err) {
+          done(err, true)
+        })
     }
     var prepare = defaultPrepare
     if (config && config.prepare) {
       prepare = shellCommand(config.prepare)
     }
     done(null, {
-      env: { 'ANDROID_HOME': '/todo/'}, // TODO
+//      env: { 'ANDROID_HOME': '/todo/'}, // TODO
       prepare: prepare,
       test: test
     })
   },
   autodetect: {
-    filename: null,
-    exists: false,
-    language: 'Java',
+    filename: 'build.gradle',
+    exists: true,
+    language: 'java',
     framework: 'Android'
   }
 }
