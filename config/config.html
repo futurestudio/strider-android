@@ -1,8 +1,17 @@
+<h2>Prepare Command</h2>
 <input type="text" ng-model="config.prepare" />
 <p class="help-text">
   Select which command should be used to prepare your project. The default is
   "gradle install".
 </p>
+
+<h2>Android Home</h2>
+<input type="text" ng-model="config.androidHome" />
+<p class="help-text">
+  Specify the location of Android's SDK (ADT).
+</p>
+
+<h2>Test Command</h2>
 <select ng-model="config.test">
   <!-- <option value="maven clean install">mvn clean install</option> -->
   <option value="gradle build">gradle build</option>

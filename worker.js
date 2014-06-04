@@ -31,7 +31,7 @@ module.exports = {
       prepare = shellCommand(config.prepare)
     }
     done(null, {
-//      env: { 'ANDROID_HOME': '/todo/'}, // TODO
+      env: { 'ANDROID_HOME': config.androidHome },
       prepare: prepare,
       test: test
     })
