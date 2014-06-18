@@ -1,36 +1,33 @@
 {
-  "name": "strider-custom",
-  "version": "0.5.2",
-  "description": "Support for custom prepare, test and deploy phases in Strider",
-  "main": "index.js",
+  "name": "strider-android",
+  "version": "0.0.3",
+  "description": "Android support for Strider Continuous Deployment. Based on Gradle",
   "scripts": {
-    "test": "jshint && mocha -R tap"
+    "test": "npm test"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/Strider-CD/strider-custom.git"
+    "url": "https://github.com/fs-opensource/strider-android.git"
   },
   "keywords": [
-    "strider"
+    "strider",
+    "android",
+    "gradle"
   ],
-  "author": "Niall O'Higgins",
-  "license": "BSD",
-  "readmeFilename": "README.md",
-  "dependencies": {
-    "gitane": "~0.3.1"
-  },
   "strider": {
-    "id": "custom",
     "type": "job",
-    "icon": "icon.png",
-    "title": "Custom Scripts",
-    "worker": "worker.js",
+    "id": "android",
+    "title": "Android",
     "webapp": "webapp.js",
+    "worker": "worker.js",
+    "icon": "icon.png",
     "config": true
   },
+  "author": "Future Studio",
+  "license": "MIT",
+  "dependencies": {
+    "strider-detection-rules": "0.0.1"
+  },
   "devDependencies": {
-    "chai": "~1.8.1",
-    "mocha": "~1.14.0",
-    "jshint": "~2.3.0"
   }
 }
