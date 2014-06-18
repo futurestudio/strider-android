@@ -14,7 +14,7 @@ module.exports = {
     },
     prepare: {
       type: String,
-      enum: ['none', 'gradle install', 'mvn install']
+      enum: ['none', 'gradle install', 'mvn install'],
       default: 'gradle install'
     }
   }
