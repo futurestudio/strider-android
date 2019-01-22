@@ -1,5 +1,7 @@
 # Strider Android
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/futurestudio/strider-android.svg)](https://greenkeeper.io/)
+
 Android plugin for Strider Continuous Deployment. Run Android unit tests in Strider.
 
 ## Requirements
